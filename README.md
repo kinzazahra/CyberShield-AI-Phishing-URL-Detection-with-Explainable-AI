@@ -1,55 +1,95 @@
-🔐 CyberShield AI
+# 🔐 CyberShield AI
 
-CyberShield AI is a Machine Learning-based cybersecurity project that detects whether a URL is safe or malicious using URL feature analysis. The system helps identify phishing, malware, and defacement URLs by learning patterns from a large cybersecurity dataset.
+## 📌 Overview
 
-🚀 Features
-Malicious URL Detection
-Phishing Website Identification
-Feature Engineering from URLs
-Random Forest & XGBoost Models
-Model Performance Evaluation
-Explainable AI using SHAP
-Interactive URL Prediction
-📊 Dataset
+CyberShield AI is a Machine Learning-based cybersecurity project designed to detect whether a URL is **Safe** or **Malicious**. The system analyzes various URL characteristics and uses classification algorithms to identify phishing, malware, and defacement websites.
 
-The project uses the Malicious URLs Dataset containing:
+This project demonstrates the application of Artificial Intelligence and Machine Learning in Cybersecurity for threat detection and prevention.
 
-Benign URLs
-Phishing URLs
-Malware URLs
-Defacement URLs
+---
+
+## 🎯 Objectives
+
+- Detect malicious URLs using Machine Learning.
+- Identify phishing websites based on URL patterns.
+- Compare different classification models.
+- Visualize cybersecurity insights through charts and metrics.
+- Provide Explainable AI (XAI) using SHAP.
+- Build a reusable URL classification model.
+
+---
+
+## 📊 Dataset
+
+The project uses the **Malicious URLs Dataset**, which contains:
+
+- Benign URLs
+- Phishing URLs
+- Malware URLs
+- Defacement URLs
 
 For binary classification:
 
-Benign → Safe (0)
-Others → Malicious (1)
-⚙️ Extracted Features
+```text
+Benign      → Safe (0)
+Others      → Malicious (1)
+Dataset Distribution
+Category	Count
+Benign	428,103
+Defacement	96,457
+Phishing	94,111
+Malware	32,520
+⚙️ Feature Engineering
+
+The following URL-based features are extracted:
+
 URL Length
 Number of Dots
 Number of Hyphens
 Number of Slashes
 Number of Digits
+Number of Special Characters
 HTTPS Presence
-IP Address Usage
+IP Address Detection
 Subdomain Length
-Suspicious Keywords Detection
+Suspicious Keyword Detection
 🤖 Machine Learning Models
+
+The following models were implemented and evaluated:
+
 Random Forest Classifier
+Ensemble-based learning algorithm
+High accuracy and robustness
+Provides feature importance analysis
 XGBoost Classifier
+Gradient boosting algorithm
+Efficient and scalable
+Used for performance comparison
 📈 Results
-Accuracy: 94.27%
-Precision: 94%
-Recall: 93%
-F1-Score: 94%
-🛡️ Example
+Model Performance
+Metric	Score
+Accuracy	94.27%
+Precision	94%
+Recall	93%
+F1-Score	94%
 
-Input
+The model achieved strong performance in distinguishing between safe and malicious URLs.
 
-http://paypal-login-secure.xyz
+📊 Visualizations
 
-Output
+The project includes:
 
-⚠️ Malicious URL
+Dataset Distribution Chart
+Correlation Heatmap
+Feature Importance Graph
+Confusion Matrix
+ROC Curve
+SHAP Explainability Plot
+
+These visualizations help understand model behavior and prediction performance.
+
+🛡️ Example Predictions
+Safe URL
 
 Input
 
@@ -58,6 +98,15 @@ https://www.wikipedia.org
 Output
 
 ✅ Safe URL
+Malicious URL
+
+Input
+
+http://paypal-login-secure.xyz
+
+Output
+
+⚠️ Malicious URL
 🛠️ Technologies Used
 Python
 Pandas
@@ -67,6 +116,7 @@ XGBoost
 Matplotlib
 Seaborn
 SHAP
+Joblib
 Google Colab
 📂 Project Structure
 CyberShield-AI/
@@ -76,12 +126,22 @@ CyberShield-AI/
 ├── cybershield_model.pkl
 ├── README.md
 └── requirements.txt
-🔮 Future Enhancements
-Real-time URL Scanning
+🚀 Future Enhancements
+Real-Time URL Scanning
 Browser Extension Integration
 Domain Reputation Analysis
-Deep Learning-based Detection
+WHOIS Lookup Integration
+SSL Certificate Verification
+Deep Learning-Based Detection
 Cloud Deployment
+🔬 Applications
+Phishing Website Detection
+Cyber Threat Intelligence
+Security Awareness Tools
+Secure Browsing Assistance
+Educational Cybersecurity Projects
 👩‍💻 Author
 
 Kinza Zahra
+
+Cybersecurity & Machine Learning Project
