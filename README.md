@@ -140,8 +140,9 @@ Cyber Threat Intelligence
 Security Awareness Tools
 Secure Browsing Assistance
 Educational Cybersecurity Projects
+
 👩‍💻 Author
 
 Kinza Zahra
 
-Cybersecurity & Machine Learning Project
+
